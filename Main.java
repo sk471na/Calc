@@ -58,4 +58,22 @@ public class Main {
         }
     }
 
+    public static void main(String[] args) throws Exception {
+        // Создаем объект Scanner для чтения ввода с консоли
+        Scanner scanner = new Scanner(System.in);
+
+        // Цикл для чтения и обработки ввода
+        while (true) {
+            // Считываем строку ввода
+            String input = scanner.nextLine();
+
+            // Если строка пуста, завершаем цикл
+            if (input.isEmpty()) {
+                break;
+            }
+
+            // Вычисляем результат и выводим его в консоль
+            System.out.println(calculate(input));
+        }
+    }
 }
